@@ -5,21 +5,9 @@ import java.util.Scanner;
 public class StringPractice {
 
     public static void main(String[] args) {
-       int hour = 01;
-       int minute = 01;
-       int seconds = 50;
-       String str2 = String.format("Time is %04d : %02d :%02d", hour, minute, seconds);
-       String name =  "Himanshu";
-       double balance = 5.0;
-       String str3 = String.format("Dear %s , Your montly balance is $ %02f , your email is %s", name,balance,name );
-       System.out.println(str3);
 
-       if(str3.contains("Himanshu")) {
-           System.out.println("Himanshu is in the string");
-       }else {
-           System.out.println("Not in string");
-       }
 
+       
        //  Atin, Vivek, Veer, Ajay, Karan
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Please provide the name as comma separated");
@@ -42,6 +30,13 @@ public class StringPractice {
     }
     public static String greet(String name){
         return  String.format("Hello %s, How are you doing today", name);
+    }
+
+    public String firstTwo(String str) {
+        if(str.length()>2){
+            return str.substring(0,2);
+        }
+        return str;
     }
 
 
